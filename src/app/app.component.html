@@ -1,0 +1,7 @@
+<div class="group">
+      <input [(ngModel)]='text' #name list="browsers">
+      <datalist id="browsers">
+      <option *ngFor="let opt of show" value="{{opt}}">
+      </datalist>    
+      <button (click)="editName()">Edit</button>
+  </div>
